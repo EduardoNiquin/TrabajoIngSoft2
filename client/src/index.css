@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+:root{
+  --bgcolor:#f1f5fd;
+  --primary-color:#ea4d6e;
+  --text-color:#838386;
+  ---main-text-color:#333333;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  /* background-color: #c0b7fc; */
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+h1,h2,h3,h4,h5,h6{
+  color: #333333;
+}
+.nav-bg{
+  background-color: var(--bgcolor);
+  position: relative;
+  padding: 0 2rem;
+  z-index: 99;
+}
+.navbar-brand{
+  font-size:2.5rem;
+}
+.navbar li{
+  padding: 0 2rem;
+}
+.navbar li a{
+  font-size: 1.7rem;
+  font-weight: lighter;
+  position: relative;
+}
+.navbar li a:hover{
+  color: var(--primary-color);
+  text-shadow: 0.01rem 0.03rem 0.04rem var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  transition: 0.5s;
+  
+}
+.btn-style{
+  width: 12rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: var(--primary-color);
+  text-transform: capitalize;
+  color:#fff;
+  margin: 0 5px;
+  font-size: 14px;
+}
+.btn-log{
+  width: 12rem;
+  height: 4rem;
+  border: 0.1rem solid var(--primary-color) ;
+  border-radius: 2rem;
+  color: var(--primary-color);
+  text-transform: capitalize;
+  background-color:transparent;
+  margin: 0 5px;
+  font-size: 14px;
+}
+
+.btn-style:hover{
+  border: 0.1rem solid var(--primary-color) ;
+  background-color: transparent;
+  color: var(--primary-color);
+  box-shadow: 0.01rem 0.03rem 0.04rem var(--primary-color) ;
+  transition: 0.5s;
+}
+.btn-log:hover{
+  border: 0.1rem solid var(--primary-color) ;
+  transition: 0.5s;
+  color: var(--bgcolor);
+  background-color: var(--primary-color);
+  box-shadow: 0.01rem 0.03rem 0.04rem var(--primary-color) ;
+}
+
+/* Contact Section Start*/
+.contact-section{
+  margin: 10rem 0;
+}
+.contact-left img
+{
+  margin-top: 2rem;
+}
+.contact-left img:hover{
+  transition: all 1s;
+  animation: rotatefont 1s linear infinite alternate-reverse;
+}
+.form-control{
+  font-size: 1.5rem;
+  height: 4rem;
+  font-weight: lighter;
+  padding-left: 1rem;
+  border: 1px solid #cde4cd;
+  border-radius: 0.5rem;
+}
+.contact-right{
+  padding-left: 3rem;
+  margin-top:5rem ;
+}
+.form-check-label{
+  margin: 0;
+}
+/* Contact Section END*/
+
+/*MISIONES*/
+#sidebar{
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+#panel_principal_1_activado{
+  padding: 2rem 0;
+  padding: 10px;
+  background: #FFFFFF;
+  z-index: 1;
+  visibility: visible;
+}
+#panel_principal_1_desactivado{
+  padding: 2rem 0;
+  padding: 10px;
+  background: #FFFFFF;
+  z-index: 1;
+  display: none;
+}
+#panel_principal_2_activado{
+  padding: 2rem 0;
+  padding: 10px;
+  background: #FFFFFF;
+  z-index: 1;
+  visibility: visible;
+}
+#panel_principal_2_desactivado{
+  padding: 2rem 0;
+  padding: 10px;
+  background: #FFFFFF;
+  z-index: 1;
+  display: none;
+}
+
+
+
+#boton_Iquique{
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  width: 12rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: green;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: -17px;
+  position: absolute;
+}
+#boton_LaSerena{
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  width: 12rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: -17px;
+  position: relative;
+  top: 43px;
+}
+#boton_Santiago{
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  width: 12rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: -120px;
+  position: relative;
+  top: 85px;
+}
+
+#titulo_mision{
+  letter-spacing: -0.05em;
+  font-family: Poppins,sans-serif;
+  font-weight: 400;
+  color: #666666;
+  line-height: normal;
+  font-size: 22px;
+}
+#texto_mision{
+  color: #777777;
+  line-height: inherit !important;
+  letter-spacing: -0.05em;
+  font-size: 14px;
+}
+#email_fundación{
+  color: var(--primary-color);
+}
+#video_misiones1{
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+/*BALBOA*/
+/* About Section Start*/
+.about-title1 {
+  font-size: 50px;
+  font-weight: 50px;
+  line-height: 1.1;
+  margin: 40px 0; 
+  text-align: center;
+}
+
+.cold-md-6 {
+  justify-content: center;
+  align-items: center;
+  align-content: center;  
+}
+
+/* About Section END*/
+
+
+/* Card1 Section Start*/
+.titulo {
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+.texto {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+/* Card1 Section END*/
+
+/* Card2 Section Start*/
+.imagen-texto1 {
+  width: 250px;
+  height: 250px;
+  margin-right: 50px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+  max-height: 250px;
+          
+}
+
+.imagen-texto2 {  
+  width: 250px;
+  height: 250px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+  max-height: 250px;
+           
+  }
+/* Card2 Section END*/
+
+/* Card3 Section Start*/
+
+.row {
+  height: auto;
+  width: auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+
+.titulo1 {
+     font-size: 1.8rem;
+     text-align: center;
+   
+     align-content: center;
+   }
+   
+   .texto1 {
+     font-size: 1.5rem;
+     text-align: center;
+     
+     align-content: center;
+   }
+   
+   .imagen-texto {
+        width: auto;
+        height: auto;
+        margin: auto;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        max-height: 100%;
+        
+   }
+   
+  
+   .col-md-8 {
+      margin: auto;
+   }
+/* Card3 Section END*/
+
+/* Directorio Section Start*/
+
+.Link {
+  color: red;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+}
+.cold-md-4 {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+/* Directorio Section END*/
+
+/* Equipo Section Start*/
+
+.Link {
+  color: red;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+}
+.cold-md-4 {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+
+/* Equipo Section END*/
+
+/* Vision Section Start*/
+.about-title { 
+  font-size: 50px;
+  font-weight: 50px;
+  line-height: 1.1;
+  margin: 40px 0; 
+  text-align: center;
+}
+/* Vision Section END*/
+
+/*footer*/
+.footer {
+  background: #322d37;
+  padding: 10px;
+  position: relative;
+  color : #fff;
+}
+
+.text-center {
+  color: #ea4d6e;
+}
+h3{
+  color: #ffffff !important;
+}
+
+#logo-footer{
+  width: 300px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+#texto-final-footer{
+  color: #ffffff;
+  font-size: 14px;
+  display: block;
+}
+
+/*fin footer*/
+
+
